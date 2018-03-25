@@ -1,0 +1,33 @@
+.footer {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: #4060b8;
+    border: 1px solid black;
+    
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.social-icon  {
+    height: 9vh;
+    width: auto;
+    margin-right: 2vw;
+
+}
+
+.email {
+    height: 11vh;
+    width: auto;
+}
+
+small {
+    color: white;
+    justify-content: first baseline;
+}

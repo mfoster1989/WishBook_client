@@ -1,4 +1,5 @@
 import React from 'react';
+import "../css/Form.css"
 
 class Form extends React.Component {
     constructor(props) {
@@ -16,18 +17,19 @@ class Form extends React.Component {
     }
 
     handleSubmit(event) {
-        alert('An essay was submitted: ' + this.state.value);
+        alert("Your message was submitted!");
         event.preventDefault();
     }
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form className="form" onSubmit={this.handleSubmit}>
+                <p>Enter a birthday message:</p>
                 <label>
-                    Enter a birthday message:
-          <textarea value={this.state.value} onChange={this.handleChange} />
+                
+                 <textarea value={this.state.value} onChange={this.handleChange} />
                 </label>
-                <input type="submit" value="Submit" />
+                <input className="submit" type="submit" value="Submit" />
             </form>
         );
     }

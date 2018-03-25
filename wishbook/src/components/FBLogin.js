@@ -9,21 +9,7 @@ class FBLogin extends React.Component {
         };
     }
 
-    responseFacebook(response) {
-        console.log(response);
-    }
-
-    render() {
-        return (
-            <FacebookLogin
-                appId="1088597931155576"
-                autoLoad={true}
-                fields="name,email,picture"
-                scope="public_profile,user_friends,"
-                callback={this.responseFacebook}
-            />
-        )
-    }
+    
 
     loadFbLoginApi() {
 
@@ -55,9 +41,7 @@ class FBLogin extends React.Component {
     testAPI() {
         console.log('Welcome!  Fetching your information.... ');
         window.FB.api('/me', function (response) {
-            console.log(response)
-            document.getElementById('status').innerHTML =
-                'Thanks for logging in, ' + response.name + '!';
+            console.log(response.accessToken)
         });
     }
 
