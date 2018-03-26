@@ -13,8 +13,8 @@ class NewFB extends React.Component {
             <FacebookLogin
                 appId="2052548785020865"
                 autoLoad={true}
-                fields="name,email,picture,public_profile,user_friends"
-                scope="public_profile,user_friends,"
+                fields="name,email,picture,user_friends"
+                scope="public_profile,user_friends"
                 callback={this.responseFacebook}
             />
         )
