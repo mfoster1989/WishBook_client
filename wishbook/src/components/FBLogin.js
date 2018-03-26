@@ -9,7 +9,21 @@ class FBLogin extends React.Component {
         };
     }
 
-    
+    responseFacebook(response) {
+        console.log(response);
+    }
+
+    render() {
+        return (
+            <FacebookLogin
+                appId="2052548785020865"
+                autoLoad={true}
+                fields="name,email,picture"
+                scope="public_profile,user_friends,"
+                callback={this.responseFacebook}
+            />
+        )
+    }
 
     loadFbLoginApi() {
 
@@ -29,7 +43,7 @@ class FBLogin extends React.Component {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     }
@@ -41,7 +55,7 @@ class FBLogin extends React.Component {
     testAPI() {
         console.log('Welcome!  Fetching your information.... ');
         window.FB.api('/me', function (response) {
-            console.log(response.accessToken)
+            console.log(response, "Data Available")
         });
     }
 

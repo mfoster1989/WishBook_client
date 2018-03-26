@@ -19,6 +19,7 @@ class Form extends React.Component {
     handleSubmit(event) {
         alert("Your message was submitted!");
         event.preventDefault();
+        
     }
 
     render() {
