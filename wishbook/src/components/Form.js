@@ -19,7 +19,7 @@ class Form extends React.Component {
     handleSubmit(event) {
         alert("Your message was submitted!");
         event.preventDefault();
-        
+
     }
 
     render() {
@@ -27,7 +27,6 @@ class Form extends React.Component {
             <form className="form" onSubmit={this.handleSubmit}>
                 <p>Enter a birthday message:</p>
                 <label>
-                
                  <textarea value={this.state.value} onChange={this.handleChange} />
                 </label>
                 <input className="submit" type="submit" value="Submit" />

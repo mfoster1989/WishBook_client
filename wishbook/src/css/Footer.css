@@ -1,9 +1,9 @@
 .footer {
-    height: 10vh;
+    height: 6vh;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    background-color: #4060b8;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #395ca9;
     border: 1px solid black;
     
 }
@@ -13,12 +13,16 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
+    padding-top: 1vh;
+    padding-right: 2vw;
+    width: 12vw;
+
 }
 
 .social-icon  {
-    height: 9vh;
+    height: 4vh;
     width: auto;
-    margin-right: 2vw;
+    /* padding: vw; */
 
 }
 
@@ -30,4 +34,6 @@
 small {
     color: white;
     justify-content: first baseline;
+    padding-left: 2vw;
+
 }

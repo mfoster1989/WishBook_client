@@ -1,12 +1,13 @@
 .header {
-    height: 15vh;
+    height: 11vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: #4060b8;
+    background-color: #395ca9
 }
 
 img {
-    height: 15vh;
+    height: 10vh;
     width: auto;
+    margin-bottom: 10px;
 }
