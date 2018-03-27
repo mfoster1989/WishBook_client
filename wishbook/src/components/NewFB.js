@@ -4,10 +4,7 @@ import React from 'react';
 import FacebookLogin from 'react-facebook-login';
 
 class NewFB extends React.Component {
-    responseFacebook(response) {
-        console.log(response)
-    }
-
+    
     render() {
         return (
             <FacebookLogin
@@ -15,7 +12,7 @@ class NewFB extends React.Component {
                 autoLoad={true}
                 fields="name,email,picture,user_friends"
                 scope="public_profile,user_friends"
-                callback={this.responseFacebook}
+                callback={this.props.responseFacebook}
             />
         )
     }
