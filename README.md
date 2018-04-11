@@ -9,7 +9,7 @@ Never miss a Facebook Birthday again!
 
 2. Click Login with Facebook button
 
-![img](https://user-images.githubusercontent.com/30170592/38630436-2bfcdbf6-3d74-11e8-8987-ecda088a934c.png)
+![img](https://user-images.githubusercontent.com/30170592/38630435-2bccdce4-3d74-11e8-816b-c9803b50b999.png)
 
 3. Type custom message
 
