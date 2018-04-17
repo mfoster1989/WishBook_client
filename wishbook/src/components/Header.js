@@ -5,7 +5,7 @@ class Header extends React.Component {
     render() { 
         return (
             <div className="header">
-                <img src="./wishbook_logo.png" alt="header"/>
+                <img src="./wblogo.png" alt="header"/>
             </div>
           )
     }

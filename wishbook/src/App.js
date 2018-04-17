@@ -29,6 +29,20 @@ class App extends React.Component {
     alert("Your message was submitted!");
     event.preventDefault();
     console.log(this.state);
+    fetch('https://wishbookserver.herokuapp.com/messages', {
+      method: 'POST',
+      body: JSON.stringify({
+        FBID: this.state.facebook.userID,
+        Token: this.state.facebook.accessToken,
+        Message: this.state.value
+      }),
+      headers: new Headers({
+        'Accept': 'application/json', 
+        'Content-Type': 'application/json'
+      })
+    })
+      // .then(res => res.json())
+      .catch(error => console.error('Error:', error))
     
   }
 
